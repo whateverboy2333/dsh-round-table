@@ -8,7 +8,7 @@ DeepSeek Harness 圆桌会议插件。让已有 Agent 窗口围绕同一个目�
 
 圆桌骑士 **0.1.18** 面向官方 Windows 桌面版 **DeepSeek Harness 0.2.0-rc.2** 的 desktop profile。已通过124套常规回归、225项浏览器检查及正式桌面验收。旧 Web rc.6不受本版支持。桌面版本会校验并清理已确认删除的专属秘书全部支持日志代际，避免升级留下的旧日志令秘书重新出现。
 
-在桌面版「插件」页安装 `dsh-round-table@0.1.18`，或从本仓库 [Releases](https://github.com/whateverboy2333/dsh-round-table/releases) 下载该版本安装包，按下述本地 `file:` 地址安装。正式桌面与 Web 宿主不要同时读写同一 DSH_HOME。使用升级前完整数据备份才能回退会话存储格式。
+当前请从 [v0.1.18 Release](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) 下载 `dsh-round-table-0.1.18.tgz`，按下述本地 `file:` 地址安装。npm 同名包正在等待发布，完成前请使用 Release 安装包。正式桌面与 Web 宿主不要同时读写同一 DSH_HOME。使用升级前完整数据备份才能回退会话存储格式。
 
 使用与本插件匹配的 DSH 环境：`@deepseek-ai/cordis` **4.0.4**，相关 `@deepseek-ai/dsh-*` 组件 **0.2.0-rc.2**。插件拒绝未知运行时版本；升级 DSH 后应重新验证兼容性。
 

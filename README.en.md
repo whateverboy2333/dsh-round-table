@@ -8,7 +8,7 @@ A round-table meeting plugin for DeepSeek Harness. Bring existing Agent sessions
 
 Round Table **0.1.18** targets the official Windows **DeepSeek Harness 0.2.0-rc.2** desktop profile. It passed 124 regression suites, 225 browser checks and native desktop acceptance. Legacy Web rc.6 is not supported by this release. Confirmed secretary deletion validates all supported log generations owned by that secretary, preventing old upgrade artifacts from bringing it back.
 
-Install `dsh-round-table@0.1.18` from the desktop Plugins page, or download the versioned archive from [Releases](https://github.com/whateverboy2333/dsh-round-table/releases) and use the local `file:` installation below. Run only one host per DSH_HOME. Rollback requires the complete pre-upgrade data backup because newer session formats may not load in an old host.
+Download `dsh-round-table-0.1.18.tgz` from [v0.1.18 Release](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) and use the local `file:` installation below. npm registry publication is pending; use the Release archive until it is available. Run only one host per DSH_HOME. Rollback requires the complete pre-upgrade data backup because newer session formats may not load in an old host.
 
 The desktop release requires **4.0.4** for `@deepseek-ai/cordis`, **3.18.4** for `@deepseek-ai/schemastery`, and **0.2.0-rc.2** for the related `@deepseek-ai/dsh-*` components. It rejects unknown runtime versions. Recheck compatibility when upgrading DSH.
 
