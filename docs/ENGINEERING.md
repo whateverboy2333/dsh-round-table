@@ -5,9 +5,9 @@ module: dsh-round-table
 last_updated: 2026-10-06
 ---
 
-# 0.1.18工程维护说明
+# 1.0.0工程维护说明
 
-当前main运行逻辑仍对应已发行0.1.18，后续变更只是文档。产品合同见[PRD](PRD.md)，实际接口见[API](产品实现速查.md)，Agent导航见[CLAUDE](../CLAUDE.md)。历史发行[tag/安装包](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)保持固定，main文档不被当作重新打包的同版资产。
+当前源码1.0.0仅调整版本编号，业务功能沿用已验收的0.1.18，宿主与数据合同未变；1.0.0尚未公开发布。产品合同见[PRD](PRD.md)，实际接口见[API](产品实现速查.md)，Agent导航见[CLAUDE](../CLAUDE.md)。已发行的0.1.18[tag/安装包](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)保持固定。
 
 ## 目录、宿主与验证
 
@@ -60,4 +60,4 @@ last_updated: 2026-10-06
 
 记录正式运行字节/版本、恢复证据、模型实际调用及限制。次数额度不是货币/Token硬上限，冻结资料不隔离原窗口记忆/文件权限。不得复制凭据进源仓库或安装包。
 
-已发行v0.1.18标签和资产保持不变；main后来新增文档，不要从main重新pack同版并替换公开资产。[npm包](https://www.npmjs.com/package/dsh-round-table)已正式发布，latest为0.1.18，匿名下载与原批准包逐字节及225文件SHA一致；安装以当前README/发行页为准。后续发布仍须核对真实身份、前置条件及官方远端结果。
+已发行v0.1.18标签和资产保持不变；main后续文档和版本编号修改不替换这些资产。[npm 0.1.18](https://www.npmjs.com/package/dsh-round-table/v/0.1.18)已正式发布，核验时latest为0.1.18，下载与原批准包逐字节及225文件SHA一致。1.0.0尚未公开发布，当前公开安装仍用0.1.18；后续发行须重新核对真实身份、前置条件及官方结果。

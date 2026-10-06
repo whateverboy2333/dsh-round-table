@@ -1,6 +1,6 @@
 {
   "name": "dsh-round-table",
-  "version": "0.1.18",
+  "version": "1.0.0",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",

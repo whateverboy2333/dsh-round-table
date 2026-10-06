@@ -4,9 +4,11 @@
 
 Bring existing Agent sessions into one meeting for discussion, collaboration and delivery. Send ordinary questions directly. For work, ask selected members to generate task cards, review them and confirm publication. Member logs, shared materials, free steps and dedicated secretary minutes stay together; members keep their original sessions and context.
 
+**Current source: 1.0.0, not publicly released.** Only the version number changes; functionality retains the accepted 0.1.18 baseline. Installation below uses the published 0.1.18 release.
+
 ## Installation
 
-**0.1.18 requires Windows DeepSeek Harness 0.2.0-rc.2 with the desktop profile.** Add `dsh-round-table@0.1.18` from the desktop **Plugins** page, then **Quit** through the application menu or tray and reopen it. Select Round table in the sidebar. Closing the window may leave the app running.
+**Host requirement: Windows DeepSeek Harness 0.2.0-rc.2 with the desktop profile.** Add `dsh-round-table@0.1.18` from the desktop **Plugins** page, then **Quit** through the application menu or tray and reopen it. Select Round table in the sidebar. Closing the window may leave the app running.
 
 Alternatively, quit the app first and use its bundled CLI. A bare `dsh` on PATH may belong to another installation:
 

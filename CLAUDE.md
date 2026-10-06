@@ -1,6 +1,6 @@
 # 圆桌骑士维护入口
 
-本仓库main运行基线为0.1.18，面向Windows DeepSeek Harness 0.2.0-rc.2。先读[README](README.md)、[PRD](docs/PRD.md)、[ENGINEERING](docs/ENGINEERING.md)、[API](docs/产品实现速查.md)。内部工作区完整回归/业务证据没有公开，public verify仅类型和包检查。
+本仓库当前源码版本为1.0.0，仅调整版本编号，功能沿用已验收的0.1.18，宿主仍为Windows DeepSeek Harness 0.2.0-rc.2。1.0.0尚未公开发布，已发行安装版仍为0.1.18。先读[README](README.md)、[PRD](docs/PRD.md)、[ENGINEERING](docs/ENGINEERING.md)、[API](docs/产品实现速查.md)。内部完整回归/业务证据不公开，public verify仅类型和包检查。
 
 ## 当前产品
 

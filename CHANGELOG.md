@@ -1,5 +1,13 @@
 # Changelog / 更新记录
 
+## [1.0.0] - 待发布 / Unreleased
+
+- 按用户指定，将当前源码及包版本从0.1.18调整为1.0.0，功能和运行逻辑保持已验收基线。
+- 当前main提供精简的中英README、完整使用指南和7张功能截图；新安装包需要对应新版本发布，不替换既有0.1.18标签或资产。
+- 此条记录版本编号调整，不代表npm或GitHub Release的1.0.0已公开发布。
+
+Version renumbering from 0.1.18 to 1.0.0 with the same verified runtime behavior. The current source includes concise bilingual documentation and seven interface screenshots. npm and GitHub Release publication for 1.0.0 remains pending; existing 0.1.18 releases are preserved.
+
 ## [0.1.18] - 2026-10-06
 
 首个面向DeepSeek Harness 0.2.0-rc.2 Windows桌面版的公开发行版本。
