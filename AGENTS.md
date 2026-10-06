@@ -1,0 +1,3 @@
+# Round Table Agent entry
+
+Read [CLAUDE](CLAUDE.md), [README](README.md), [PRD](docs/PRD.md), [ENGINEERING](docs/ENGINEERING.md) and [API](docs/产品实现速查.md) before modifying this plugin. Current runtime is 0.1.18 for Windows DeepSeek Harness 0.2.0-rc.2. User instructions take precedence. Preserve approved product behavior; do not infer defaults from old templates. Documentation work does not authorize production meetings/model calls, credential extraction or account-security changes. Published tags/assets are immutable; verify public publication status instead of assuming login or dry-run means success.
