@@ -14,4 +14,4 @@
 
 修改生产src并生成lib，检查SDK精确版本、身份/批准版本/SHA、授权和幂等。用户当前明确指令优先；不要恢复预设业务步骤/返工配置、独立任务页或旧手动任务编辑器。不要在正式用户会话试发、删除、验收或调用模型；隔离数据及当前授权先就绪。凭据不进文档/仓库/安装包。
 
-当前可使用[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)安装，npm尚待正式发布；最近状态不是永久判断，继续时查询官方结果。标签66539b6对应的v0.1.18与既发资产固定；main文档变化不意味着可以替换发行包或重新发布同版。后续代码发布需对应新版本和实际验证，不把dry-run计为成功。
+当前[npm dsh-round-table@0.1.18](https://www.npmjs.com/package/dsh-round-table/v/0.1.18)与[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)均已正式发行；安装使用desktop profile，npm下载已与原发行包逐字节核验一致。标签66539b6对应的v0.1.18与既发资产固定；main文档变化不意味着可以替换发行包或重新发布同版。后续代码发布需对应新版本和实际验证，不把dry-run计为成功。
