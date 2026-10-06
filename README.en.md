@@ -4,21 +4,21 @@
 
 Bring existing Agent sessions into one meeting for discussion, collaboration and delivery. Send ordinary questions directly. For work, ask selected members to generate task cards, review them and confirm publication. Member logs, shared materials, free steps and dedicated secretary minutes stay together; members keep their original sessions and context.
 
-**Current source: 1.0.0, not publicly released.** Only the version number changes; functionality retains the accepted 0.1.18 baseline. Installation below uses the published 0.1.18 release.
+**Current version: 1.0.0.** Only the version number changes; functionality retains the accepted 0.1.18 baseline.
 
 ## Installation
 
-**Host requirement: Windows DeepSeek Harness 0.2.0-rc.2 with the desktop profile.** Add `dsh-round-table@0.1.18` from the desktop **Plugins** page, then **Quit** through the application menu or tray and reopen it. Select Round table in the sidebar. Closing the window may leave the app running.
+**Host requirement: Windows DeepSeek Harness 0.2.0-rc.2 with the desktop profile.** Add `dsh-round-table@1.0.0` from the desktop **Plugins** page, then **Quit** through the application menu or tray and reopen it. Select Round table in the sidebar. Closing the window may leave the app running.
 
 Alternatively, quit the app first and use its bundled CLI. A bare `dsh` on PATH may belong to another installation:
 
 ```powershell
 $desktopCli = Join-Path $env:LOCALAPPDATA 'Programs/DeepSeek Harness/resources/runtime/cli/bin/dsh.cmd'
 & $desktopCli --version   # Must be 0.2.0-rc.2
-& $desktopCli plugin --profile desktop add 'dsh-round-table@0.1.18'
+& $desktopCli plugin --profile desktop add 'dsh-round-table@1.0.0'
 ```
 
-[npm](https://www.npmjs.com/package/dsh-round-table/v/0.1.18) · [GitHub Release and local archive](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) · [Full installation, build and recovery guide](docs/配置指南.md#english-guide)
+[npm version entry](https://www.npmjs.com/package/dsh-round-table/v/1.0.0) · [GitHub Release and local archive](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v1.0.0) · [Full installation, build and recovery guide](docs/配置指南.md#english-guide)
 
 ## Start in five steps
 

@@ -1,6 +1,6 @@
 # 圆桌骑士维护入口
 
-本仓库当前源码版本为1.0.0，仅调整版本编号，功能沿用已验收的0.1.18，宿主仍为Windows DeepSeek Harness 0.2.0-rc.2。1.0.0尚未公开发布，已发行安装版仍为0.1.18。先读[README](README.md)、[PRD](docs/PRD.md)、[ENGINEERING](docs/ENGINEERING.md)、[API](docs/产品实现速查.md)。内部完整回归/业务证据不公开，public verify仅类型和包检查。
+本仓库当前版本为1.0.0，仅调整版本编号，功能沿用已验收的0.1.18，宿主仍为Windows DeepSeek Harness 0.2.0-rc.2。本版安装入口见[README](README.md)。接手再读[PRD](docs/PRD.md)、[ENGINEERING](docs/ENGINEERING.md)、[API](docs/产品实现速查.md)。内部完整回归/业务证据不公开，public verify仅类型和包检查。
 
 ## 当前产品
 
@@ -14,4 +14,4 @@
 
 修改生产src并生成lib，检查SDK精确版本、身份/批准版本/SHA、授权和幂等。用户当前明确指令优先；不要恢复预设业务步骤/返工配置、独立任务页或旧手动任务编辑器。不要在正式用户会话试发、删除、验收或调用模型；隔离数据及当前授权先就绪。凭据不进文档/仓库/安装包。
 
-当前[npm dsh-round-table@0.1.18](https://www.npmjs.com/package/dsh-round-table/v/0.1.18)与[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)均已正式发行；安装使用desktop profile，npm下载已与原发行包逐字节核验一致。标签66539b6对应的v0.1.18与既发资产固定；main文档变化不意味着可以替换发行包或重新发布同版。后续代码发布需对应新版本和实际验证，不把dry-run计为成功。
+本版安装使用desktop profile及精确版本 `dsh-round-table@1.0.0`，入口见[npm 1.0.0](https://www.npmjs.com/package/dsh-round-table/v/1.0.0)和[GitHub v1.0.0](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v1.0.0)。历史v0.1.18标签66539b6及既发资产固定，不因本版替换。发行完成须核验官方远端结果，不把登录或dry-run计为成功。

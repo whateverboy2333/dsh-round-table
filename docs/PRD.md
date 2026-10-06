@@ -7,7 +7,7 @@ last_updated: 2026-10-06
 
 # 圆桌骑士：当前产品需求与行为
 
-> 当前源码1.0.0仅调整版本编号，产品形态沿用已验收的0.1.18；1.0.0尚未公开发布。维护入口见[CLAUDE](../CLAUDE.md)、[ENGINEERING](ENGINEERING.md)及[API](产品实现速查.md)；内部验收和业务数据不公开。
+> 当前版本1.0.0仅调整版本编号，产品形态沿用已验收的0.1.18。本版安装入口见[README](../README.md)；维护入口见[CLAUDE](../CLAUDE.md)、[ENGINEERING](ENGINEERING.md)及[API](产品实现速查.md)。内部验收和业务数据不公开。
 
 ## 1. 文档作用与版本
 
@@ -223,4 +223,4 @@ last_updated: 2026-10-06
 
 ## 验证与发行状态
 
-0.1.18内部交付已通过124套常规、225项真实浏览器检查和18包检查；公开仓库verify仅类型/包验证。生成卡片的旧真实模型单例与最新步骤的隔离Host/组件验证范围不同，不能据此保证任意模型起草或纪要事实质量。当前[npm包](https://www.npmjs.com/package/dsh-round-table)与[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)均已发行，桌面安装方式以仓库README的当前说明为准。已发行标签和资产不随后续main文档补全而替换。
+0.1.18内部交付已通过124套常规、225项真实浏览器检查和18包检查；1.0.0沿用该功能基线，本段不将原证据当作重新执行。公开仓库verify仅类型/包验证，旧真实模型单例与新步骤的隔离Host/组件验证范围不同，不能保证任意模型起草或纪要事实质量。本版安装入口见[README](../README.md)，发行成功以官方远端核验为准。历史[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)及既发资产保持不变。
