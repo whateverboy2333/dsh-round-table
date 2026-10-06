@@ -1,0 +1,11 @@
+node_modules/
+TASKS.md
+outputs/
+output/
+*.tgz
+*.log
+.DS_Store
+.npmrc
+.env
+.env.*
+.credentials.yaml

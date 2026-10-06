@@ -1,0 +1,8 @@
+import type {WorkflowDefinition,WorkflowNode} from '../workflow-types.ts'
+export function simpleWorkflow(kind:'sequence'|'parallel',members:{id:string;name:string}[],id:string):WorkflowDefinition{
+ const work=(id:string,title:string,index:number):WorkflowNode=>({id,title,kind:'work',memberIds:members[index]?[members[index]!.id]:[],instruction:'阅读明确选择的会议资料，提交观点、依据和待核实事项。',inputs:[],includeIncoming:true,requireReview:false,autoReceiveAndRun:false})
+ const d:WorkflowDefinition={id,executionPolicy:'per-node-v1',title:kind==='sequence'?'依次评审':'并行评审',entryId:kind==='sequence'?'first':'inputs',revision:1,layoutRevision:1,nodes:[],edges:[],loops:[],parallelGroups:[],positions:{},limits:{nodeAttempts:2,workAttempts:30,minutesStarts:5}}
+ if(kind==='sequence'){d.nodes=[work('first','第一位评审',0),work('second','下一位复核',1)];d.edges=[{id:'next',from:'first',to:'second',kind:'flow'}];d.positions={first:{x:30,y:40},second:{x:300,y:40}}}
+ else{d.nodes=[{id:'inputs',title:'共同输入',kind:'join',memberIds:[],instruction:'选择交给评审者的正式资料',inputs:[],includeIncoming:true},work('first','评审分支一',0),work('second','评审分支二',1),{id:'finish',title:'汇合结果',kind:'join',memberIds:[],instruction:'主持人核对各分支结果',inputs:[],includeIncoming:true}];d.edges=[{id:'a',from:'inputs',to:'first',kind:'flow'},{id:'b',from:'inputs',to:'second',kind:'flow'},{id:'c',from:'first',to:'finish',kind:'flow'},{id:'d',from:'second',to:'finish',kind:'flow'}];d.parallelGroups=[{id:'parallel',sourceId:'inputs',branchIds:['first','second'],joinId:'finish'}];d.positions={inputs:{x:30,y:120},first:{x:300,y:30},second:{x:300,y:220},finish:{x:570,y:120}}}
+ return d
+}
