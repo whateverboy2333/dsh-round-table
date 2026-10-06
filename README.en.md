@@ -136,6 +136,19 @@ In discussion text, Enter invokes the current send/record action and Ctrl/Cmd+En
 
 Existing runs keep their frozen rules. Original per-node graphs remain compatible with schema 2; users explicitly prepare new free-step plans, saved under schema 3 and read-only to older plugins. Original definitions remain in version history. This release supports schemas 1/2/3 and treats unknown schema 4+ as read-only.
 
+## Interface preview
+
+The light and dark step lists below use the production React interface from 0.1.18 with synthetic meeting and member examples. They show interface features, not real Agent execution results.
+
+![Light step list with editable names, assignees, parallel stages and deletion](docs/assets/steps-light.png)
+
+<details>
+<summary>View the dark step list</summary>
+
+![Dark step list](docs/assets/steps-dark.png)
+
+</details>
+
 ## Agent handoff and current documentation
 
 Read [CLAUDE](CLAUDE.md), [PRD](docs/PRD.md), [ENGINEERING](docs/ENGINEERING.md) and [API](docs/产品实现速查.md). Codex can load root AGENTS.md automatically. Main carries current maintenance documentation; the v0.1.18 tag and archives remain unchanged. Internal acceptance evidence is not distributed here, and public verify covers types/package checks only.

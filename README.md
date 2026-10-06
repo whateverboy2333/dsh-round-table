@@ -136,6 +136,19 @@ Agent只读工具仅向真实、未归档的当前成员、本人的可信创建
 
 旧运行沿用冻结规则，历史不改。原图逐环节开关仍兼容schema2；自由步骤编排需用户明确新建，保存为schema3，旧插件对此只读、不能投递。旧保存定义会保留在版本记录中，当前插件兼容1/2/3，未知4+只读。
 
+## 界面预览
+
+以下为0.1.18生产React界面的亮色与暗色步骤列表，使用合成会议与成员示例；展示界面功能，不代表真实Agent执行结果。
+
+![亮色步骤列表：自定义环节、成员指派、并行与删除](docs/assets/steps-light.png)
+
+<details>
+<summary>查看暗色步骤列表</summary>
+
+![暗色步骤列表](docs/assets/steps-dark.png)
+
+</details>
+
 ## Agent接手与当前文档
 
 先读[维护入口](CLAUDE.md)、[PRD](docs/PRD.md)、[ENGINEERING](docs/ENGINEERING.md)和[API](docs/产品实现速查.md)。Codex可自动读取根AGENTS.md。main包含最新维护说明；v0.1.18发行标签与安装包保持原始内容，不能因文档补齐重新替换。内部124套/225浏览器记录不随仓库上传，public verify仅类型/包检查。
