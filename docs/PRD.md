@@ -223,4 +223,4 @@ last_updated: 2026-10-06
 
 ## 验证与发行状态
 
-0.1.18内部交付已通过124套常规、225项真实浏览器检查和18包检查；公开仓库verify仅类型/包验证。生成卡片的旧真实模型单例与最新步骤的隔离Host/组件验证范围不同，不能据此保证任意模型起草或纪要事实质量。当前通过[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)下载安装包，npm注册发布尚未完成，以仓库README的当前说明为准。已发行标签和资产不随后续main文档补全而替换。
+0.1.18内部交付已通过124套常规、225项真实浏览器检查和18包检查；公开仓库verify仅类型/包验证。生成卡片的旧真实模型单例与最新步骤的隔离Host/组件验证范围不同，不能据此保证任意模型起草或纪要事实质量。当前[npm包](https://www.npmjs.com/package/dsh-round-table)与[GitHub v0.1.18](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18)均已发行，桌面安装方式以仓库README的当前说明为准。已发行标签和资产不随后续main文档补全而替换。

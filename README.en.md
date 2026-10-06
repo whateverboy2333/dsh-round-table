@@ -8,18 +8,18 @@ A round-table meeting plugin for DeepSeek Harness. Bring existing Agent sessions
 
 Round Table **0.1.18** targets the official Windows **DeepSeek Harness 0.2.0-rc.2** desktop profile. It passed 124 regression suites, 225 browser checks and native desktop acceptance. Legacy Web rc.6 is not supported by this release. Confirmed secretary deletion validates all supported log generations owned by that secretary, preventing old upgrade artifacts from bringing it back.
 
-Download `dsh-round-table-0.1.18.tgz` from [v0.1.18 Release](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) and use the local `file:` installation below. npm registry publication is pending; use the Release archive until it is available. Run only one host per DSH_HOME. Rollback requires the complete pre-upgrade data backup because newer session formats may not load in an old host.
+`dsh-round-table@0.1.18` is published on [npm](https://www.npmjs.com/package/dsh-round-table). Use the desktop installation below, or download the `.tgz` from [v0.1.18 Release](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) and install from a local `file:` URL. Run only one host per DSH_HOME. Rollback requires the complete pre-upgrade data backup because newer session formats may not load in an old host.
 
 The desktop release requires **4.0.4** for `@deepseek-ai/cordis`, **3.18.4** for `@deepseek-ai/schemastery`, and **0.2.0-rc.2** for the related `@deepseek-ai/dsh-*` components. It rejects unknown runtime versions. Recheck compatibility when upgrading DSH.
 
-Use the desktop **Plugins** page to add the local `.tgz` archive, for example `file:C:/Downloads/dsh-round-table-0.1.18.tgz`, and check the target is **desktop**. After installation, choose **Quit** from the application menu or tray and reopen DeepSeek Harness. Closing a window may leave the app running in the tray. Open Round table and check the version and existing meetings.
+Use the desktop **Plugins** page to add `dsh-round-table@0.1.18` and check the target is **desktop**. A local archive such as `file:C:/Downloads/dsh-round-table-0.1.18.tgz` remains available as an alternative. After installation, choose **Quit** from the application menu or tray and reopen DeepSeek Harness. Closing a window may leave the app running in the tray. Open Round table and check the version and existing meetings.
 
 For a command-line installation, completely quit the desktop app first and use its bundled CLI. A bare `dsh` on PATH may belong to Hermes or a legacy Web installation. These commands use the default Windows install directory; adjust it if your installation is elsewhere:
 
 ```powershell
 $desktopCli = Join-Path $env:LOCALAPPDATA 'Programs/DeepSeek Harness/resources/runtime/cli/bin/dsh.cmd'
 & $desktopCli --version   # This release requires 0.2.0-rc.2
-& $desktopCli plugin --profile desktop add 'file:C:/Downloads/dsh-round-table-0.1.18.tgz'
+& $desktopCli plugin --profile desktop add 'dsh-round-table@0.1.18'
 # Reopen DeepSeek Harness desktop; do not launch a web profile.
 ```
 

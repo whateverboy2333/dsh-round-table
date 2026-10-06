@@ -8,18 +8,18 @@ DeepSeek Harness 圆桌会议插件。让已有 Agent 窗口围绕同一个目�
 
 圆桌骑士 **0.1.18** 面向官方 Windows 桌面版 **DeepSeek Harness 0.2.0-rc.2** 的 desktop profile。已通过124套常规回归、225项浏览器检查及正式桌面验收。旧 Web rc.6不受本版支持。桌面版本会校验并清理已确认删除的专属秘书全部支持日志代际，避免升级留下的旧日志令秘书重新出现。
 
-当前请从 [v0.1.18 Release](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) 下载 `dsh-round-table-0.1.18.tgz`，按下述本地 `file:` 地址安装。npm 同名包正在等待发布，完成前请使用 Release 安装包。正式桌面与 Web 宿主不要同时读写同一 DSH_HOME。使用升级前完整数据备份才能回退会话存储格式。
+`dsh-round-table@0.1.18` 已发布到 [npm](https://www.npmjs.com/package/dsh-round-table)。推荐使用下述桌面插件安装方式；也可从 [v0.1.18 Release](https://github.com/whateverboy2333/dsh-round-table/releases/tag/v0.1.18) 下载 `.tgz`，通过本地 `file:` 地址安装。正式桌面与 Web 宿主不要同时读写同一 DSH_HOME。使用升级前完整数据备份才能回退会话存储格式。
 
 使用与本插件匹配的 DSH 环境：`@deepseek-ai/cordis` **4.0.4**，相关 `@deepseek-ai/dsh-*` 组件 **0.2.0-rc.2**。插件拒绝未知运行时版本；升级 DSH 后应重新验证兼容性。
 
-推荐在桌面版「插件」页选择添加插件，填入本地 `.tgz` 的 `file:` 地址，例如 `file:C:/Downloads/dsh-round-table-0.1.18.tgz`，检查安装目标为 **desktop**。安装完成后从应用菜单或托盘选择**退出**，确认应用已完全结束，再重新打开。仅关闭窗口可能仍在托盘运行，不能代替重启。打开侧栏「圆桌」核对版本与原会议。
+推荐在桌面版「插件」页选择添加插件，填入 `dsh-round-table@0.1.18`，检查安装目标为 **desktop**。也可使用本地安装包地址，例如 `file:C:/Downloads/dsh-round-table-0.1.18.tgz`。安装完成后从应用菜单或托盘选择**退出**，确认应用已完全结束，再重新打开。仅关闭窗口可能仍在托盘运行，不能代替重启。打开侧栏「圆桌」核对版本与原会议。
 
 如果需要命令行，请使用桌面发行版自带的 CLI。先完全退出桌面版；不要直接照抄 PATH 中的 `dsh`，它可能来自 Hermes 或旧 Web 安装。以下为 Windows 默认安装路径，若安装到其他位置请按实际位置调整：
 
 ```powershell
 $desktopCli = Join-Path $env:LOCALAPPDATA 'Programs/DeepSeek Harness/resources/runtime/cli/bin/dsh.cmd'
 & $desktopCli --version   # 本版要求 0.2.0-rc.2
-& $desktopCli plugin --profile desktop add 'file:C:/Downloads/dsh-round-table-0.1.18.tgz'
+& $desktopCli plugin --profile desktop add 'dsh-round-table@0.1.18'
 # 重新打开 DeepSeek Harness 桌面版，不启动 web profile
 ```
 
